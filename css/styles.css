@@ -539,26 +539,48 @@ a {
 }
 
 /* Callouts */
-
 .callout {
-  padding: 4rem;
   border-radius: 5px;
+  padding: 0;
+
 }
 
 .callout--primary {
-  background: var(--color-primary);
+  background: #1178fe;
   color: #fff;
+  position: relative;
+}
+
+.callout__head {
+  background: #1f0874e8;
+  padding: 0;
+  border-radius: 5px 5px 0 0px;
+  width: 100%;
 }
 
 .callout__heading {
   color: #fff;
-  margin-top: 0;
-  font-size: 3rem;
+  font-size: 2.62rem;
+  height: 6.4rem;
+  margin:0 0 0 0;
+}
+
+.callout__text {
+  padding: 1rem 4rem 0rem 4rem;
+  font-size: 2.1rem;
+  opacity: 0.9;
 }
 
 .callout .btn {
   justify-self: center;
   align-self: center;
+  color: var(--color-headings);
+}
+
+.callout .btn--secondary:hover {
+  background: #00c8eb;
+  color: #fff;
+  transform: scale(1.1);
 }
 
 .callout__content {
@@ -567,14 +589,45 @@ a {
 
 @media screen and (min-width: 768px) {
   .callout .grid--1x2 {
-    grid-template-columns: 1fr auto;
+      grid-template-columns: 1fr auto;
   }
+  
+  .callout {
+    display: block;
+    position: relative;
+  }
+
   .callout__content {
-    text-align: left;
+      text-align: left;
   }
-  .callout .btn {
-    justify-self: start;
-    margin: 0 2rem;
+
+  .callout__head {
+    padding: 2.4rem;
+  }
+  
+  .callout__heading {
+      font-size: 3rem;
+      padding: 16px;
+  }
+  
+  .callout__text {
+      font-size: 2rem;
+      margin-right: 0rem;
+  }
+  
+  .callout>.btn {
+      justify-self: start;
+      color: #fff;
+      margin: 0 2rem;
+      position: relative;
+      top: 5rem;
+      right: 128px;
+  }
+
+  .callout .btn--secondary:hover {
+      background: #00c8eb;
+      color: var(--color-headings);
+      transform: scale(1.1);
   }
 }
 
@@ -700,6 +753,7 @@ a {
 .nav__brand {
   transform: translateY(5px);
   width: 150px;
+  height: 64px;
 }
 
 @media screen and (min-width: 768px) {
@@ -892,6 +946,6 @@ a {
 
 /* Sign-up Callout */
 
-.callout-signup {
+.callout-start {
   transform: translateY(5rem);
 }

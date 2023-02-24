@@ -31,9 +31,18 @@ img {
 
 body {
   font-family: Inter, Arial, Helvetica, sans-serif;
-  font-size: 4rem;
+  font-size: 2rem;
   line-height: 1.5;
+  overflow-x: hidden;
   color: var(--color-body);
+}
+
+@media screen and (min-width: 768px) {
+  body {
+    font-size: 5rem;
+    line-height: 1.5;
+    overflow-x: hidden;
+  }
 }
 
 h1, h2, h3 {

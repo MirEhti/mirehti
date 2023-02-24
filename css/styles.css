@@ -31,7 +31,7 @@ img {
 
 body {
   font-family: Inter, Arial, Helvetica, sans-serif;
-  font-size: 2rem;
+  font-size: 4rem;
   line-height: 1.5;
   color: var(--color-body);
 }
@@ -751,7 +751,7 @@ a {
 }
 
 .nav__brand {
-  transform: translateY(5px);
+  transform: scale(1.5) translateY(1.2rem) translateX(4rem);
   width: 150px;
   height: 64px;
 }

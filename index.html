@@ -34,8 +34,17 @@
     <header>
       <nav class="nav collapsible">
         <a aria-label="mirehti" class="nav__brand" href="/"
-          ><img src="images/logo.svg" alt=""
-        /></a>
+        ><picture data-aos="zoom-in">
+          <source
+            type="image/svg"
+            srcset="images/mirehti.svg 1x, images/mirehti.svg 2x"
+          />
+          <source
+            type="image/png"
+            srcset="images/mirehti.png 1x, images/mirehti.png 2x"
+          />
+          <img src="images/mirehti.png" alt="" />
+        </picture></a>
         <svg class="icon icon--white nav__toggler">
           <use href="images/sprite.svg#menu"></use>
         </svg>
@@ -80,18 +89,14 @@
       </div>
     </section>
     <section data-aos="zoom-in-up" class="block container block-domain">
-      <header class="block__header"           id="search-domain">
+      <header class="block__header" id="search-domain">
         <h2>Starting at $10 per month</h2>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti,
-          exercitationem?
-        </p>
+        <p>The most reliable & easy to manage domains.</p>
       </header>
       <div class="input-group">
         <input
           aria-label="Domain"
           type="text"
-
           class="input"
           placeholder="Enter domain name here..."
         />
@@ -103,11 +108,11 @@
       </div>
       <ul class="list block-domain__prices">
         <li><span class="badge badge--secondary">.com $9</span></li>
-        <li>.sg $10</li>
-        <li>.space $11</li>
-        <li>.info $14</li>
-        <li>.net $10</li>
-        <li>.xyz $10</li>
+        <li>.in $10</li>
+        <li>.dev $11</li>
+        <li>.social $16</li>
+        <li>.net $12</li>
+        <li>.xyz $14</li>
       </ul>
     </section>
     <section data-aos="fade-up" class="block container block-plans">
@@ -127,6 +132,14 @@
                 <li class="list__item">Unlimited Bandwidth</li>
                 <li class="list__item">100 GB SSD Storage</li>
                 <li class="list__item">3 GB RAM</li>
+                <ul class="list list--tick-moderate">
+                  <li class="list__item">5 Free Emails</li>
+                  <li class="list__item">24x7 Google Customer Support</li>
+                </ul>
+                <ul class="list list--cross">
+                  <li class="list__item">Wordpress Builder</li>
+                  <li class="list__item">6 GB RAM</li>
+                </ul>
               </ul>
               <button class="btn btn--outline btn--block">Buy Now</button>
             </div>
@@ -139,7 +152,9 @@
               <span class="plan__price">$15</span>
               <span class="plan__billing-cycle">/month</span>
               <span class="badge badge--primary badge--small">25% OFF</span>
-              <span class="plan__description">Premium Experience & Extra Layer of Security</span>
+              <span class="plan__description"
+                >Premium Experience & Extra Layer of Security</span
+              >
             </header>
             <div class="card__body">
               <ul class="list list--tick">
@@ -147,9 +162,13 @@
                 <li class="list__item">Unlimited Bandwidth</li>
                 <li class="list__item">200 GB SSD Storage</li>
                 <li class="list__item">6 GB RAM</li>
+                <li class="list__item">50 Free Emails</li>
+                <li class="list__item">Wordpress Builder</li>
+                <li class="list__item">5 Free Emails</li>
+                <li class="list__item">24x7 Premium Customer Support</li>
               </ul>
-              <ul class="list list--cross">
-                <li class="list__item">Free Email</li>
+              <ul class="list list--tick-moderate">
+                <li class="list__item">5 Free Emails</li>
                 <li class="list__item">6 GB RAM</li>
               </ul>
               <button class="btn btn--outline btn--block">Buy Now</button>
@@ -163,7 +182,9 @@
               <span class="plan__price">$25</span>
               <span class="plan__billing-cycle">/month</span>
               <span class="badge badge--secondary badge--small">50% OFF</span>
-              <span class="plan__description">Business & Enterprise Level Website Hosting</span>
+              <span class="plan__description"
+                >Business & Enterprise Level Website Hosting</span
+              >
             </header>
             <div class="card__body">
               <ul class="list list--tick">
@@ -198,7 +219,10 @@
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam
             obcaecati vel ad unde est illo at. Labore excepturi officia dolores!
           </p>
-          <a href="https://codewithmosh.com" target="_blank" class="link-arrow"
+          <a
+            href="https://domains.google.com"
+            target="_blank"
+            class="link-arrow"
             >Learn More</a
           >
         </div>
@@ -226,7 +250,7 @@
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam
             obcaecati vel ad unde est illo at. Labore excepturi officia dolores!
           </p>
-          <a href="https://codewithmosh.com" target="_blank" class="link-arrow"
+          <a href="https://bluehost.com" target="_blank" class="link-arrow"
             >Learn More</a
           >
         </div>
@@ -254,7 +278,7 @@
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam
             obcaecati vel ad unde est illo at. Labore excepturi officia dolores!
           </p>
-          <a href="https://codewithmosh.com" target="_blank" class="link-arrow"
+          <a href="https://wordpress.com" target="_blank" class="link-arrow"
             >Learn More</a
           >
         </div>
